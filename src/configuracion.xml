@@ -1,0 +1,12 @@
+<!-- Archivo para Configuracion de Conexion de la Base y Fecha Actual -->
+
+<archivo_config>
+		<!-- Nombre de la Base de Datos dentro de la Instancia de SQL Server -->
+		<base_datos_catalogo>GD2C2016</base_datos_catalogo>				<!-- Valor Por Defecto: GD2C2016-->
+		<base_datos_usuario>gd</base_datos_usuario>								<!-- Valor Por Defecto: gd-->
+		<base_datos_password>gd2016</base_datos_password>					<!-- Valor Por Defecto: gd2016-->
+		<base_datos_source>.\SQLSERVER2012</base_datos_source>		<!-- Valor Por Defecto: .\SQLSERVER2012-->
+		
+		<!-- Por Favor usar Formato YYYY.MM.DD -->
+		<fecha_actual>2016.01.01</fecha_actual>											<!-- Valor Por Defecto: 2016.01.01-->
+</archivo_config>

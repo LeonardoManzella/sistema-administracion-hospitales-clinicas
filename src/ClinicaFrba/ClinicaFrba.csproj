@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D8B29F5-1F49-420C-8A45-544EC4ACDC09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClinicaFrba</RootNamespace>
+    <AssemblyName>ClinicaFrba</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abm Afiliado\IdentificarAfiliado.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Abm Afiliado\IdentificarAfiliado.Designer.cs">
+      <DependentUpon>IdentificarAfiliado.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Abm Afiliado\ABM_AFILIADO.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abm Afiliado\ABM_AFILIADO.Designer.cs">
+      <DependentUpon>ABM_AFILIADO.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="AbmRol\CrearRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\CrearRol.Designer.cs">
+      <DependentUpon>CrearRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbmRol\ModificarRol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbmRol\ModificarRol.Designer.cs">
+      <DependentUpon>ModificarRol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionesMedicas\RegistrarResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionesMedicas\RegistrarResultado.Designer.cs">
+      <DependentUpon>RegistrarResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base de Datos\BD_Afiliados.cs" />
+    <Compile Include="Base de Datos\BD_Bonos.cs" />
+    <Compile Include="Base de Datos\BD_LLegada.cs" />
+    <Compile Include="Base de Datos\BD_Profesional.cs" />
+    <Compile Include="Base de Datos\Conexion.cs" />
+    <Compile Include="Base de Datos\BD_Roles.cs" />
+    <Compile Include="Base de Datos\BD_Turnos.cs" />
+    <Compile Include="Base de Datos\BD_Estadisticas.cs" />
+    <Compile Include="Base de Datos\InteraccionDB.cs" />
+    <Compile Include="Base de Datos\BD_Log_In.cs" />
+    <Compile Include="Cancelar Turnos\CancelarTurnoAfiliado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancelar Turnos\CancelarTurnoAfiliado.Designer.cs">
+      <DependentUpon>CancelarTurnoAfiliado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cancelar Turnos\CancelarTurnoProfesional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cancelar Turnos\CancelarTurnoProfesional.Designer.cs">
+      <DependentUpon>CancelarTurnoProfesional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Afiliado.cs" />
+    <Compile Include="Clases\ComboData.cs" />
+    <Compile Include="Clases\Comunes.cs" />
+    <Compile Include="Clases\Configuracion_Global.cs" />
+    <Compile Include="Clases\Helper.cs" />
+    <Compile Include="Clases\SelecionarFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clases\SelecionarFecha.Designer.cs">
+      <DependentUpon>SelecionarFecha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra Bono\CompraBonoAfiliado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra Bono\CompraBonoAfiliado.Designer.cs">
+      <DependentUpon>CompraBonoAfiliado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compra Bono\CompraBonoAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Compra Bono\CompraBonoAdmin.Designer.cs">
+      <DependentUpon>CompraBonoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crear Agenda Medico\HorariosDia.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\Estadisticas.Designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\ABMAFIL.cs" />
+    <Compile Include="Negocio\Estadisticas.cs" />
+    <Compile Include="Negocio\Llegada_At_Med.cs" />
+    <Compile Include="Negocio\Log_In.cs" />
+    <Compile Include="Pedir Turno\PedirTurno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedir Turno\PedirTurno.Designer.cs">
+      <DependentUpon>PedirTurno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Crear Agenda Medico\AgendaMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crear Agenda Medico\AgendaMedico.Designer.cs">
+      <DependentUpon>AgendaMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AtencionesMedicas\RegistrarLlegada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtencionesMedicas\RegistrarLlegada.Designer.cs">
+      <DependentUpon>RegistrarLlegada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Usuario.cs" />
+    <EmbeddedResource Include="Abm Afiliado\IdentificarAfiliado.resx">
+      <DependentUpon>IdentificarAfiliado.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abm Afiliado\ABM_AFILIADO.resx">
+      <DependentUpon>ABM_AFILIADO.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\CrearRol.resx">
+      <DependentUpon>CrearRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbmRol\ModificarRol.resx">
+      <DependentUpon>ModificarRol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtencionesMedicas\RegistrarLlegada.resx">
+      <DependentUpon>RegistrarLlegada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtencionesMedicas\RegistrarResultado.resx">
+      <DependentUpon>RegistrarResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancelar Turnos\CancelarTurnoAfiliado.resx">
+      <DependentUpon>CancelarTurnoAfiliado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cancelar Turnos\CancelarTurnoProfesional.resx">
+      <DependentUpon>CancelarTurnoProfesional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clases\SelecionarFecha.resx">
+      <DependentUpon>SelecionarFecha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra Bono\CompraBonoAfiliado.resx">
+      <DependentUpon>CompraBonoAfiliado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compra Bono\CompraBonoAdmin.resx">
+      <DependentUpon>CompraBonoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crear Agenda Medico\AgendaMedico.resx">
+      <DependentUpon>AgendaMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedir Turno\PedirTurno.resx">
+      <DependentUpon>PedirTurno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
